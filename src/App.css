@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #97a3a3;
+    margin-top: 1%;
+    padding: 5%;
+    border-radius: 10px;
+    background: #f0f0f0;
+    text-align: center;
+    position: relative;
+    margin-bottom: 120px;
+  }
+  
+  .header-box {
+    background-color: #dbf5f5;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    border-radius: inherit;
+    border-color: black;
+    background-color: white;
+    padding: 5px;
+    opacity: 0.85;
+    border: 2px solid white;
+    box-shadow: 0 0 5px 5px white;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+  }
+  
+  
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+  
+  .product-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+  }
+  
+  .product-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    object-fit: cover; /* Pidä kuva-alueen suhde samana */
+  }
+  
+  .product-name {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+  }
+  
+  .product-price {
+    color: #d11d1d;
+    font-weight: bold;
+  }
+  
+  .btn-secondary {
+    background-color: #bb5656;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #d11d1d;
+  }
+
+  @media screen and (max-width: 768px) {
+    .product-container {
+        flex-wrap: wrap; /* Tuotteet menevät allekkain pienemmillä näytöillä */
+    }
+}

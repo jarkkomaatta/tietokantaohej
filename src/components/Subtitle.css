@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+.subtitle {
+    background-color: #97a3a3;
+    margin-top: 2em;
+    padding: 1.2%;
+    border-radius: 10px;
+    background: #f0f0f0;
+    /* text-align: center; */
+    position: relative;
+    margin-bottom: 2%;
+    margin-right: 18%;
+    margin-left: 18%;
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center; 
+
+  }
+
+  h2 {
+    color: #333;
+    font-size: 40px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    margin-left: 9%;
+  }
+
+  p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    text-align: right;
+    margin-left: 20%;
+    margin-right: 8%;
+    align-items: center; 
+  }
+
+  @media screen and (max-width: 768px) {
+    .subtitle {
+        flex-wrap: wrap; /* Tuotteet menevät allekkain pienemmillä näytöillä */
+    }
+}
